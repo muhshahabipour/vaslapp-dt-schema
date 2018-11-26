@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>DT</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/node_modules/notie/dist/notie.min.css" />
+  <link rel="stylesheet" href="/node_modules/material-design-icons/iconfont/material-icons.css" />
+  <link rel="stylesheet" href="/vaslapp-dt-schema.css" />
+</head>
+
+<body>
+
+
+  <div class="container" style="padding-top: 2rem">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="schema-wrapper">
+
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="flexbox flexbox-align-center" style="padding: 2rem 0">
+          <button class="btn btn-primary add-item-btn" style="direction: ltr">افزودن مورد جدید</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="/vaslapp-dt-schema.js"></script>
+  <script>
+    $('.add-item-btn').on("click", () => {
+      schema.addItem();
+    })
+
+    // ====================================================================================
+
+    var a = [{
+      name: "option 1",
+      value: "option 1",
+    }, {
+      name: "object",
+      value: "object",
+    }, {
+      name: "option 2",
+      value: "option 2",
+    }]
+
+    schema.setOptions(a);
+
+
+    // ====================================================================================
+
+    var b = [{
+        id: "_m5i3b2xdi",
+        name: "asd",
+        type: "object",
+        require: "true",
+        defaultValue: "gsdfgdfgfsdgdfgssdfgsdf",
+        description: "gsdhdhsfd",
+        data: [{
+            id: "_kvodn8bz2",
+            name: "sdfgfdgfd",
+            type: "option 1",
+            require: "",
+            defaultValue: "",
+            description: "",
+            data: []
+          },
+          {
+            id: "_cokes30i3",
+            name: "gsfdgdfgd",
+            type: "option 2",
+            require: "",
+            defaultValue: "",
+            description: "",
+            data: []
+          }
+        ]
+      },
+      {
+        id: "_7zydzn41c",
+        name: "gsdfgdfgsdf",
+        type: "option 2",
+        require: "",
+        defaultValue: "",
+        description: "",
+        data: []
+      }
+    ]
+
+
+    schema.setData(b)
+  </script>
+</body>
+
+</html>
