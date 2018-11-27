@@ -1,6 +1,6 @@
 {
   "name": "vaslapp-dt-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "dist/vaslapp-dt-schema.js",
   "scripts": {
