@@ -7,6 +7,7 @@ class SchemaRowItem {
             name: "",
             type: "",
             require: "",
+            isIndex: "",
             defaultValue: "",
             description: "",
             data: []

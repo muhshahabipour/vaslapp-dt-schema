@@ -162,10 +162,21 @@ var schema = (function () {
 
                     <div class="collapse" id="item-collapse-${obj.id}">
                         <div class="detail-wrapper">
-                            <div class="form-group form-check">
-                                <input type="checkbox" class="form-check-input" name="data[${i}].required" id="is-require-${obj.id}" data-id="${obj.id}" data-name="require" value="true" ${obj.require ? `checked="checked"` : ``}>
-                                <label class="form-check-label" for="is-require-${obj.id}">Required؟</label>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" name="data[${i}].required" id="is-require-${obj.id}" data-id="${obj.id}" data-name="require" value="true" ${obj.require ? `checked="checked"` : ``}>
+                                        <label class="form-check-label" for="is-require-${obj.id}">Required؟</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="form-group form-check">
+                                        <input type="checkbox" class="form-check-input" name="data[${i}].isIndex" id="is-index-${obj.id}" data-id="${obj.id}" data-name="isIndex" value="true" ${obj.isIndex ? `checked="checked"` : ``}>
+                                        <label class="form-check-label" for="is-index-${obj.id}">Index؟</label>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="clearfix">&nbsp;</div>
                             <div class="row">
                                 <div class="col-xs-12 col-md-6">
                                     <div class="form">
